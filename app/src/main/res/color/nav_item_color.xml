@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected color -->
+    <item android:color="@color/matiria_C_lignt" android:state_checked="true"/>
+    <item android:alpha="@dimen/material_emphasis_disabled" android:color="?attr/colorOnSurface" android:state_enabled="false"/>
+    <!-- Default color -->
+    <item android:color="@color/matiria_C_text"/>
+</selector>

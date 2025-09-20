@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/matiria_C_DarkExtreem"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Background Container for Image Slider -->
+        <FrameLayout
+            android:id="@+id/sliderBackgroundContainer"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/slider_background"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Rounded Image Slider -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="8dp">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <!-- Dots Indicator (TabLayout) -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sliderBackgroundContainer"
+            app:tabGravity="start"
+            app:tabIndicatorColor="@android:color/white"
+            app:tabIndicatorGravity="center"
+            app:tabMode="fixed" />
+
+        <!-- Quick Actions / Shortcuts Buttons -->
+
+        <!-- Book Appointment Button with Icon and Text -->
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/lexend_bold"
+            android:text="@string/home_screen_text"
+            android:textColor="@color/matiria_C_text"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sliderBackgroundContainer" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/add_booking"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/matiria_card_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        app:cornerRadius="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tabIndicator">
+
+                        <ImageView
+                            android:id="@+id/iconBook"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center|start"
+                            android:background="@drawable/circle_background"
+                            android:contentDescription="Book Icon"
+                            android:padding="2dp"
+                            android:src="@drawable/bookmark_add"
+                            android:tint="@color/matiria_card_bg" />
+
+                        <TextView
+                            android:id="@+id/textBookHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/lexend_bold"
+                            android:text="@string/home_screen_text1"
+                            android:textColor="@color/matiria_C_text"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textBookSubtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/home_screen_text2"
+                            android:textColor="@color/matiria_C_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view_appointment_card"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toEndOf="@+id/add_booking"
+            app:layout_constraintTop_toTopOf="@+id/add_booking">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/matiria_card_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:cornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tabIndicator">
+
+                <ImageView
+                    android:id="@+id/iconview"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|start"
+                    android:background="@drawable/circle_background"
+                    android:contentDescription="Book Icon"
+                    android:padding="2dp"
+                    android:src="@drawable/credit_card"
+                    android:tint="@color/matiria_card_bg" />
+
+                <TextView
+                    android:id="@+id/textViewHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/lexend_bold"
+                    android:text="@string/home_screen_text3"
+                    android:textColor="@color/matiria_C_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSubtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/home_screen_text4"
+                    android:textColor="@color/matiria_C_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+                <!-- Add more cards here if needed -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/package_card"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_booking">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/matiria_card_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:cornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tabIndicator">
+
+                <ImageView
+                    android:id="@+id/Packageview"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|start"
+                    android:background="@drawable/circle_background"
+                    android:contentDescription="Book Icon"
+                    android:padding="2dp"
+                    android:src="@drawable/package_icon"
+                    android:tint="@color/matiria_card_bg" />
+
+                <TextView
+                    android:id="@+id/texPackageHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/lexend_bold"
+                    android:text="@string/home_screen_text5"
+                    android:textColor="@color/matiria_C_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textPackageSubtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/home_screen_text6"
+                    android:textColor="@color/matiria_C_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/billHistory_card"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:layout_constraintStart_toEndOf="@+id/package_card"
+            app:layout_constraintTop_toTopOf="@+id/package_card">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/matiria_card_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:cornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tabIndicator">
+
+                <ImageView
+                    android:id="@+id/Paymentview"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|start"
+                    android:background="@drawable/circle_background"
+                    android:contentDescription="Book Icon"
+                    android:padding="2dp"
+                    android:src="@drawable/view_timeline"
+                    android:tint="@color/matiria_card_bg" />
+
+                <TextView
+                    android:id="@+id/texPaymentHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/lexend_bold"
+                    android:text="@string/home_screen_text7"
+                    android:textColor="@color/matiria_C_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textPaymentSubtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/home_screen_text8"
+                    android:textColor="@color/matiria_C_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

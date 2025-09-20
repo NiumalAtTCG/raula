@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/sign_up_bg">
+
+    <!-- PIN Entry Display -->
+
+    <!-- Dial Pad -->
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/lexend_bold"
+        android:text="@string/pin_code_screen_text4"
+        android:textAlignment="center"
+        android:textColor="@color/matiria_C_lignt"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pin_entry1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/lexend_bold"
+        android:gravity="center"
+        android:text="@string/pin_code_view_hide_pin"
+        android:textColor="@color/matiria_C_lignt"
+        android:textColorHint="@color/matiria_C_lignt"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/dial_pad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Add Switch for Fingerprint Activation -->
+
+    <ImageView
+        android:id="@+id/view_hide_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/pin_code_view_hide_pin"
+        android:src="@drawable/eye_closed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <GridLayout
+        android:id="@+id/dial_pad"
+        android:layout_width="0dp"
+        android:layout_height="306dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="179dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:padding="20dp"
+        android:rowCount="4"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Number Buttons -->
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+
+            android:backgroundTint="@color/matiria_C_Mid"
+            android:padding="10dp"
+            android:text="1"
+            android:textColor="@color/matiria_C_lignt"
+            android:textSize="24sp" />
+
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/matiria_C_Mid"
+            android:padding="10dp"
+            android:text="2"
+            android:textColor="@color/matiria_C_lignt"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/matiria_C_Mid"
+            android:padding="10dp"
+            android:text="3"
+            android:textColor="@color/matiria_C_lignt"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/matiria_C_Mid"
+            android:padding="10dp"
+            android:text="6"
+            android:textColor="@color/matiria_C_lignt"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/matiria_C_Mid"
+            android:padding="10dp"
+            android:text="4"
+            android:textColor="@color/matiria_C_lignt"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/matiria_C_Mid"
+            android:padding="10dp"
+            android:text="5"
+            android:textColor="@color/matiria_C_lignt"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/matiria_C_Mid"
+            android:padding="10dp"
+            android:text="7"
+            android:textColor="@color/matiria_C_lignt"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/matiria_C_Mid"
+            android:padding="10dp"
+            android:text="8"
+            android:textColor="@color/matiria_C_lignt"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/matiria_C_Mid"
+            android:padding="10dp"
+            android:text="9"
+            android:textColor="@color/matiria_C_lignt"
+            android:textSize="24sp" />
+
+        <!-- Empty Space -->
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/matiria_C_lignt"
+            android:padding="10dp"
+            android:text="⌫"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/matiria_C_Mid"
+            android:padding="10dp"
+            android:text="0"
+            android:textColor="@color/matiria_C_lignt"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/add_profile_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/matiria_C_lignt"
+            android:padding="10dp"
+            android:text="✔"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

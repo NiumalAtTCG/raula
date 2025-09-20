@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/matiria_C_DarkExtreem">
+
+    <!-- Custom Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/matiria_C_Dark"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar9"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:indeterminateTint="@color/matiria_C_lignt"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/crop_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crop_image_view" />
+
+    <com.canhub.cropper.CropImageView
+        android:id="@+id/crop_image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="37dp"
+        app:cropAspectRatioX="1"
+        app:cropAspectRatioY="1"
+        app:cropShape="oval"
+        app:cropFixAspectRatio="true"
+        app:cropAutoZoomEnabled="false"
+        app:cropScaleType="centerInside"
+        app:cropMaxZoom="1"
+        app:layout_constraintBottom_toTopOf="@id/button_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+    <!-- Bottom Buttons -->
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/matiria_C_Dark"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/button_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/matiria_C_Dark"
+            android:contentDescription="@string/rotate"
+            android:src="@drawable/ic_rotate"
+            android:tint="@color/matiria_C_lignt" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+
+            android:text="@string/save"
+            android:textColor="@color/matiria_C_text"
+            android:textSize="14sp"
+            app:backgroundTint="@color/matiria_C_Secondry_Btn"
+            app:strokeColor="@android:color/transparent"
+            app:strokeWidth="0.7dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

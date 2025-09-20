@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">raula</string>
+    <!--    start_screen_text-->
+    <string name="start_screen_text1">Welcome to</string>
+    <string name="start_screen_text2">Salon</string>
+    <string name="start_screen_text3">More than a hair cut</string>
+    <string name="start_screen_text4">Get Started</string>
+
+
+    <!--    signin_screen_text-->
+    <string name="signin_screen_text1">Sign In</string>
+    <string name="signin_screen_text2">Email</string>
+    <string name="signin_screen_text3">Password</string>
+    <string name="signin_screen_text4">Forget Password ?</string>
+    <string name="signin_screen_text5">New to App </string>
+    <string name="signin_screen_text7">Login</string>
+    <string name="signin_screen_text8">Send OTP</string>
+
+    <!--    signup_screen_text-->
+    <string name="signup_screen_text1">Register Your Account</string>
+    <string name="signup_screen_text2">Register</string>
+    <string name="signup_screen_hint1">First Name</string>
+    <string name="signup_screen_hint2">Last Name</string>
+    <string name="signup_screen_hint3">Mobile Number</string>
+    <string name="signup_screen_hint4">Email</string>
+    <string name="signup_screen_hint5">Address</string>
+    <string name="signup_screen_text3">Already have an account</string>
+
+    <string name="otp_message">Raula Salon Shop - Your One Time OTP code = %1$s</string>
+
+
+    <!--    pin_code_screen_text-->
+    <string name="pin_code_screen_text">PIN Code</string>
+    <string name="pin_code_screen_text4">Signin Loked</string>
+    <string name="pin_code_screen_text2">Enter Your 4 Pin Code</string>
+    <string name="pin_code_screen_text3">Submit</string>
+    <string name="pin_code_screen_hint2">Pin.No</string>
+    <string name="pin_code_view_hide_pin"></string>
+
+    <!--    Verification-->
+    <string name="verification_screen_text1">Verification</string>
+    <string name="verification_screen_text2">Verify with your OTP </string>
+    <string name="verification_screen_text3">Verify </string>
+    <string name="verification_screen_text4">Enter Your verification code </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    password_conferm-->
+    <string name="password_conferm_text1">Add New Password</string>
+    <string name="password_conferm_text2">Confirm Password</string>
+    <string name="password_conferm_text3">Secure Your Account</string>
+
+
+    <!--settings_Activity_text-->
+    <string name="settings_Activity_text">Security</string>
+    <string name="settings_Activity_text2">Fingerprint unlock</string>
+    <string name="settings_Activity_text3">Unlock your application through fingerprint unlock </string>
+
+    <string name="settings_Activity_text4">PIN code unlock</string>
+    <string name="settings_Activity_text5">Unlock your application through a PIN code unlock </string>
+
+    <!--    profile_setting_text-->
+    <string name="profile_setting_text1">Add picture</string>
+    <string name="profile_setting_text2">Save</string>
+    <string name="profile_setting_text3">PIN code unlock</string>
+
+    <!--    cropActivity-->
+    <string name="rotate">rotate</string>
+    <string name="save">choose</string>
+
+
+    <!--    home_screen_text-->
+    <string name="home_screen_text">Quick Actions</string>
+    <string name="home_screen_text1">Book Appointment</string>
+    <string name="home_screen_text3">Appointment View and Pay</string>
+    <string name="home_screen_text5">Packages and Services</string>
+    <string name="home_screen_text7">Payments History</string>
+    <string name="home_screen_text2">Make Your appointment now</string>
+    <string name="home_screen_text6">Our Packages and Services</string>
+    <string name="home_screen_text8">show payment and appointment history</string>
+    <string name="home_screen_text4">View appointment and make payment</string>
+
+    <!--    AppointmentFragment_text-->
+    <string name="AppointmentFragment_text1">Choose Your Packages</string>
+    <string name="AppointmentFragment_text2">Choose Your Date</string>
+    <string name="AppointmentFragment_text3">Make Appointment</string>
+    <string name="AppointmentFragment_text4">Total Price:</string>
+
+    <!--    ViewAppointment_texts-->
+    <string name="ViewAppointment_texts">Pay Now</string>
+
+    <!--    ViewPaymentHistory_texts-->
+    <string name="ViewPaymentHistory_texts">FeedBack</string>
+
+</resources>

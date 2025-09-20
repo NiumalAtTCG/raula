@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_constrainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp">
+
+    <!-- Custom Logo -->
+    <ImageView
+        android:id="@+id/toolbar_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle_background"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/raula_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/toolbar_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/lexend_bold"
+        android:paddingStart="8dp"
+        android:text="Raula Salon"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_logo"
+        app:layout_constraintStart_toEndOf="@+id/toolbar_logo"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_logo"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <ImageView
+        android:id="@+id/phone_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginStart="100dp"
+        android:contentDescription="Phone Icon"
+        android:src="@drawable/ic_phone"
+        android:tint="@color/matiria_C_text"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_logo"
+        app:layout_constraintStart_toEndOf="@+id/toolbar_title"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_logo"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="39dp"
+        android:contentDescription="Location Icon"
+        android:src="@drawable/ic_location"
+        android:tint="@color/matiria_C_text"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phone_icon"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_logo" />
+
+    <!-- Title Text -->
+
+    <!-- Phone Icon (Right Side) -->
+
+    <!-- Location Icon (Right Side) -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

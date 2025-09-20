@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="matiria_C_lignt">#F6BB74</color>
+    <color name="matiria_C_Mid">#3F2D17</color>
+    <color name="matiria_C_Secondry_Btn">#58442B</color>
+    <color name="matiria_C_Dark">#211A12</color>
+    <color name="matiria_C_DarkExtreem">#17120C</color>
+    <color name="matiria_C_Mid_Greeen">#D3E0B4</color>
+    <color name="matiria_C_text">#E9E2DA</color>
+    <color name="matiria_card_bg">#392E2C</color>
+
+
+
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#7D746D</color>
+
+
+
+    <color name="dark_gray">#D3E0B4</color>
+
+
+
+
+</resources>

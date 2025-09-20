@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "926190269091",
+    "project_id": "raula-fb24f",
+    "storage_bucket": "raula-fb24f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926190269091:android:848d309973d09768084516",
+        "android_client_info": {
+          "package_name": "lk.javainstitute.raula"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1y0ah3kvmSgG_Ag7Rfh50YAiJYwTYtpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
